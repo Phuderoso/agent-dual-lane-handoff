@@ -1,0 +1,27 @@
+{
+  "schema": "agent_dual_lane.config.v1",
+  "handoff_dir": "handoffs",
+  "state_path": "handoffs/state.json",
+  "lanes": {
+    "composer": {
+      "label": "Long-run / hands lane",
+      "session_dir": "/path/to/session/A"
+    },
+    "peer": {
+      "label": "Fresh / eyes lane",
+      "session_dir": "/path/to/session/B"
+    }
+  },
+  "thresholds_mb": {
+    "updates_warn": 40,
+    "updates_handoff": 100,
+    "events_warn": 35,
+    "events_handoff": 60
+  },
+  "thresholds_other": {
+    "compaction_warn": 40,
+    "compaction_handoff": 80
+  },
+  "auto_handoff": { "armed": false },
+  "cooldown_sec": 900
+}
