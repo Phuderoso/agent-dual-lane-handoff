@@ -96,6 +96,7 @@ def status(cfg: dict) -> dict:
     out = {"schema": "agent_dual_lane_status.v1", "ts": _utc(), "lanes": {}}
     for key, lane in lanes.items():
         out["lanes"][key] = _score(_lane_metrics(lane, key), cfg)
+    # recommend high → low
     items = list(out["lanes"].items())
     items.sort(key=lambda x: x[1].get("score") or 0, reverse=True)
     if len(items) >= 2 and (items[0][1].get("score") or 0) >= 2:
@@ -218,7 +219,7 @@ def watch(cfg: dict) -> dict:
     armed = bool((cfg.get("auto_handoff") or {}).get("armed"))
     if not rec:
         return {"ok": True, "action": "none", "status": st}
-    src, dst = rec.split("\u2192")
+    src, dst = rec.split("→")
     src_score = (st["lanes"].get(src) or {}).get("score") or 0
     if src_score < 3:
         return {"ok": True, "action": "none", "status": st}
@@ -265,6 +266,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("watch")
     args = ap.parse_args(cleaned)
     cfg_path = Path(config_arg)
+    # allow config relative to CWD or next to this file
     if not cfg_path.is_file():
         alt = Path(__file__).resolve().parents[2] / config_arg
         if alt.is_file():
@@ -273,6 +275,7 @@ def main(argv: list[str] | None = None) -> int:
     if not cfg:
         raise SystemExit(f"missing config: {config_arg}")
     if not Path(cfg.get("handoff_dir", "handoffs")).is_absolute():
+        # if examples/config.json, handoffs at package root
         pkg = Path(__file__).resolve().parents[2]
         cfg["handoff_dir"] = str(pkg / (cfg.get("handoff_dir") or "handoffs"))
 

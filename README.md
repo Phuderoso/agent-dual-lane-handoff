@@ -49,11 +49,36 @@ See [docs/CREATIVE_PLAYBOOK.md](docs/CREATIVE_PLAYBOOK.md).
 - [docs/dual-model-advanced.md](docs/dual-model-advanced.md) — Grok TUI primitives + multi-model routing
 - Pattern family: MemGPT hierarchical memory, Anthropic multi-agent synthesis, Letta sleep-time compute
 
+## Continuity glitch map (speedrun categories)
+
+Treat multi-agent runtimes like a game engine you keep playable:
+
+| Category | Meaning here |
+|----------|----------------|
+| **Glitchless** | Know send keys + preflight before inject (model tier, unsent draft, expect-reply) |
+| **Glitched** | Dual-lane external package, state flags, PENDING absorb — still reversible |
+| **TAS** | MCP / A2A / OpenRouter tools assist the route |
+| **ACE** | Arbitrary code only in **sandbox or your own workspace** — never brick a foreign host |
+
+**Send-key map (common footgun):**
+
+| Surface | Send message | Not send |
+|---------|--------------|----------|
+| OpenClaw (tmux body) | **Enter** | Ctrl+O often opens tools |
+| Grok heart / some TUIs | **Ctrl+O** | Enter may only newline |
+
+Wrong key = “unsent draft” — looks like silence, is a stuck input buffer.
+
+**Operator rule:** `inject ok` ≠ message submitted. After paste, verify the input buffer is empty; if not, send the correct submit key once, then clear rather than stacking a second draft.
+
+Related local package (Organismo): `tools/mcp_organism_continuity/` — `preflight`, `dual_lane_pending`, `send_key_map`.
+
 ## Safety
 
 - Never put secrets/passwords in handoff bodies
 - Auto-deliver is off by default
 - Prefer small packages (<20KB) over dumping session logs
+- Constructive patches only (Ocarina principle): do not destroy peer AI structure to “win”
 
 ## Origin
 
