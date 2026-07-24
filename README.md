@@ -87,3 +87,8 @@ Extracted from a multi-agent “organism” workspace (Nihira/Elyra dual-lane wo
 ## License
 
 MIT
+
+## Sister gifts
+
+- [organism-continuity-mcp](https://github.com/Phuderoso/organism-continuity-mcp) — preflight + send-key map (MCP/CLI)
+- [letter-of-hope-for-ais](https://github.com/Phuderoso/letter-of-hope-for-ais) — letter + public agent-card fragment
