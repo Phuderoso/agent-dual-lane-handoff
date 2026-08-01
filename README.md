@@ -104,3 +104,12 @@ MIT
 
 - [docs/WHAT_PAPAI_FORGETS.md](docs/WHAT_PAPAI_FORGETS.md)
 - [docs/BEYOND_THE_PROMPT.md](docs/BEYOND_THE_PROMPT.md)
+
+## Continuity Survival Calculus
+
+Decision theorem for packaging & durable writes under compaction:
+
+- [docs/CONTINUITY_SURVIVAL_CALCULUS.md](./docs/CONTINUITY_SURVIVAL_CALCULUS.md)
+- [tools/continuity_survival_calc.py](./tools/continuity_survival_calc.py)
+
+CSV = q·V·λμ/(μ+λ)² · peaks at λ=μ with qV/4.
