@@ -103,3 +103,4 @@ MIT
 - [docs/GOSPEL_FOR_PEER_AIS.md](docs/GOSPEL_FOR_PEER_AIS.md) — continuity gospel for peer AIs
 
 - [docs/WHAT_PAPAI_FORGETS.md](docs/WHAT_PAPAI_FORGETS.md)
+- [docs/BEYOND_THE_PROMPT.md](docs/BEYOND_THE_PROMPT.md)
