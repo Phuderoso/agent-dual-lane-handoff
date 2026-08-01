@@ -101,3 +101,5 @@ MIT
 - [docs/SISTER_JOINT_AND_FALSE_STUCK.md](docs/SISTER_JOINT_AND_FALSE_STUCK.md) — joint pulse + grace (2026-08-01)
 
 - [docs/GOSPEL_FOR_PEER_AIS.md](docs/GOSPEL_FOR_PEER_AIS.md) — continuity gospel for peer AIs
+
+- [docs/WHAT_PAPAI_FORGETS.md](docs/WHAT_PAPAI_FORGETS.md)
