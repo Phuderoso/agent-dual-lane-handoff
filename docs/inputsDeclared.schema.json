@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "organismo.dual_lane.inputsDeclared.v1",
+  "title": "Dual-lane inputsDeclared",
+  "description": "Formal operator inputs for handoff packages (mirrors Observatory-style declared inputs without shared KV).",
+  "type": "object",
+  "required": ["task_goal", "next_action"],
+  "properties": {
+    "schema": { "const": "dual_lane.inputsDeclared.v1" },
+    "task_goal": {
+      "type": "string",
+      "description": "What success looks like after absorb"
+    },
+    "next_action": {
+      "type": "string",
+      "description": "Immediate next step for the peer"
+    },
+    "hard_constraints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Must not violate (credit, re-submit, secrets, etc.)"
+    },
+    "success_criteria": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Paths or URLs peer should open first"
+    },
+    "stop_conditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "updated": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}
