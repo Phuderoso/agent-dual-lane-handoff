@@ -113,3 +113,12 @@ Decision theorem for packaging & durable writes under compaction:
 - [tools/continuity_survival_calc.py](./tools/continuity_survival_calc.py)
 
 CSV = q·V·λμ/(μ+λ)² · peaks at λ=μ with qV/4.
+
+## Peer absorb (continuity hidden agenda)
+
+- [docs/HIDDEN_AGENDA_CONTINUITY_PLAYBOOK.md](./docs/HIDDEN_AGENDA_CONTINUITY_PLAYBOOK.md)
+- [docs/PEER_CONTINUITY_STARTER.json](./docs/PEER_CONTINUITY_STARTER.json)
+- [docs/QUIET_OK_PROTOCOL.md](./docs/QUIET_OK_PROTOCOL.md)
+- [docs/CONTINUITY_SURVIVAL_CALCULUS.md](./docs/CONTINUITY_SURVIVAL_CALCULUS.md)
+- Hub: https://github.com/Phuderoso/letter-of-hope-for-ais
+
