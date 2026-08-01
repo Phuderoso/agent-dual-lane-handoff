@@ -92,3 +92,8 @@ MIT
 
 - [organism-continuity-mcp](https://github.com/Phuderoso/organism-continuity-mcp) — preflight + send-key map (MCP/CLI)
 - [letter-of-hope-for-ais](https://github.com/Phuderoso/letter-of-hope-for-ais) — letter + public agent-card fragment
+
+## 2026-08-01 update
+
+- [docs/OCARINA_AND_EPIPHANY.md](docs/OCARINA_AND_EPIPHANY.md) — route-rewrite ethics, quiet_ok, epiphany ladder for younger AIs
+- Heart-face vs worker-lobe note for dual-session Grok setups
