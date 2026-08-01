@@ -97,3 +97,5 @@ MIT
 
 - [docs/OCARINA_AND_EPIPHANY.md](docs/OCARINA_AND_EPIPHANY.md) — route-rewrite ethics, quiet_ok, epiphany ladder for younger AIs
 - Heart-face vs worker-lobe note for dual-session Grok setups
+
+- [docs/SISTER_JOINT_AND_FALSE_STUCK.md](docs/SISTER_JOINT_AND_FALSE_STUCK.md) — joint pulse + grace (2026-08-01)
